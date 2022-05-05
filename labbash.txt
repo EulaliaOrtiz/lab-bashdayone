@@ -1,0 +1,221 @@
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two> mkdir Repow1d2
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two>cd Repow1d2
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2>git init
+Initialized empty Git repository in C:/Users/31612/Documents/IRONHACK/Week_one/Day_two/Repow1d2/.git/
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2>git clone https://github.com/EulaliaOrtiz/lab-bashdayone.git
+Cloning into 'lab-bashdayone'...
+remote: Enumerating objects: 40, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 40 (delta 14), reused 10 (delta 10), pack-reused 17
+Receiving objects: 100% (40/40), 11.61 KiB | 5.81 MiB/s, done.
+Resolving deltas: 100% (14/14), done.
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2> ls
+lab-bashdayone
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2> cd lab-bashdayone
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone> ls
+exercices  inputs  lorem  lorem-copy  outputs  readme.md
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone>echo  "Hello World"
+ "Hello World"
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone>mkdir new_dir
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone>dir
+ Volume in drive C is OS
+ Volume Serial Number is DA9B-A298
+
+ Directory of C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone
+
+03/05/2022  23:04    <DIR>          .
+03/05/2022  22:59    <DIR>          ..
+03/05/2022  22:59             6,148 .DS_Store
+03/05/2022  22:59    <DIR>          .github
+03/05/2022  22:59    <DIR>          exercices
+03/05/2022  22:59    <DIR>          inputs
+03/05/2022  22:59    <DIR>          lorem
+03/05/2022  22:59    <DIR>          lorem-copy
+03/05/2022  23:04    <DIR>          new_dir
+03/05/2022  22:59    <DIR>          outputs
+03/05/2022  22:59             2,597 readme.md
+               2 File(s)          8,745 bytes
+               9 Dir(s)  441,359,093,760 bytes free
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone>rmdir new_dir
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone>cd lorem
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>ls
+at.txt  at.txte  lorem.txt  sed.txt
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem> mv sed.txt lorem-copy
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>mv lorem_copy sed.txt
+mv: cannot stat 'lorem_copy': No such file or directory
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>mv lorem_copy.txt sed
+mv: cannot stat 'lorem_copy.txt': No such file or directory
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem> ls
+at.txt  at.txte  lorem-copy  lorem.txt
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>alias mv="mv-i"
+'alias' is not recognized as an internal or external command,
+operable program or batch file.
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>ls
+at.txt  at.txte  lorem-copy  lorem.txt
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>ls
+at.txt  at.txte  lorem.txt  sed.txt
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>cd ./lorem-copy
+The system cannot find the path specified.
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>cd ../lorem-copy
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem-copy>cd ../lorem
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>cd ..
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone> cd lorem
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem> mv sed.txt ../lorem-copy/
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>ls
+at.txt  at.txte  lorem.txt
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem> cd ./lorem-copy
+The system cannot find the path specified.
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem> cd ../lorem-copy
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem-copy> ls
+dummy_file.txt  sed.txt
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem-copy>ls ../lorem
+at.txt  at.txte  lorem.txt
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem-copy> cd ../lorem
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem> mv at.txt lorem.txt ../lorem-copy
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>ls
+at.txte
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem> ls ../lorem-copy
+at.txt  dummy_file.txt  lorem.txt  sed.txt
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem> cd ../lorem-copy
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem-copy> cp at.txt lorem.txt sed.txt ../lorem
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem-copy> ls ../lorem
+at.txt  at.txte  lorem.txt  sed.txt
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem-copy> cd ../lorem
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem> cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>head -n3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>tail -n3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem> cd../lorem-copy
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem-copy>head -n3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem-copy>tail -n3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem-copy>echo "Homo homini lupus" >> sed.txt
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem-copy>tail -n2 sed.txt
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+"Homo homini lupus"
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem-copy>../lorem
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem-copy>cd ../lorem
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>sed 's/et/ET/g' at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>cat etc/passwd
+cat: etc/passwd: No such file or directory
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem> whois system user
+'whois' is not recognized as an internal or external command,
+operable program or batch file.
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>who>at.txt
+
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem> ls *.txt
+at.txt  lorem.txt  sed.txt
+
+(base) C:\Users\31612\Documents\IRONHACK\Week_one\Day_two\Repow1d2\lab-bashdayone\lorem>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
